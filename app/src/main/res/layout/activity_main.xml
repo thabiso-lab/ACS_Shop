@@ -1,0 +1,64 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView android:text = "ACS My Shop" android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/textview"
+        android:textSize = "35dp"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal = "true" />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Welcome {ShopName}"
+        android:id = "@+id/textView"
+        android:layout_below = "@+id/textview"
+        android:layout_centerHorizontal = "true"
+        android:textColor = "#ff7aff24"
+        android:textSize = "35dp" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terminal"
+        android:id="@+id/button"
+        android:layout_below="@id/textView"
+        android:layout_toLeftOf="@+id/textview"
+        android:layout_toStartOf="@+id/textview" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:id="@+id/button2"
+        android:layout_below="@id/textView"
+        android:layout_toRightOf="@+id/textview"
+        android:layout_toEndOf="@+id/textview" />
+
+<!--    <menu >-->
+<!--        <item-->
+<!--            android:id="@+id/homeFragment"-->
+<!--            android:title="Home"-->
+<!--            android:icon="@drawable/ic_launcher_foreground"/>-->
+<!--        <item-->
+<!--            android:id="@+id/profileFragment"-->
+<!--            android:title="Profile"-->
+<!--            android:icon="@drawable/profile"/>-->
+<!--        <item-->
+<!--            android:id="@+id/settingsFragment"-->
+<!--            android:title="Setting"-->
+<!--            android:icon="@drawable/settings"/>-->
+<!--    </menu>-->
+
+
+
+</RelativeLayout>
